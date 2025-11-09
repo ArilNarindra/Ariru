@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Nihongo Nexus | 電</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cyberblue: '#00f0ff',
+              cyberpink: '#ff00f0',
+              cybergreen: '#00ff8f',
+              cyberpurple: '#8a2be2',
+              cyberdark: '#0a0a1a',
+              cybergray: '#1a1a2e',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-cyberdark text-gray-100 font-sans overflow-x-hidden">
+    <custom-navbar></custom-navbar>
+    
+    <main class="min-h-screen">
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-black/50 z-10"></div>
+            <video autoplay loop muted class="absolute w-full h-full object-cover">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-neon-lights-abstract-background-1580-large.mp4" type="video/mp4">
+            </video>
+            
+            <div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyberblue to-cyberpink">
+                    日本語を学ぶ
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-cyberblue font-light">
+                    Immerse yourself in the future of Japanese learning. Cyberpunk meets traditional in our neon-lit dojo.
+                </p>
+                <div class="flex gap-4 justify-center">
+                    <a href="/login" class="px-8 py-3 bg-cyberblue text-cyberdark font-bold rounded-full hover:bg-cyan-300 transition-all duration-300 hover:shadow-lg hover:shadow-cyberblue/50">
+                        Begin Journey
+                    </a>
+                    <a href="/explore" class="px-8 py-3 border-2 border-cyberpink text-cyberpink font-bold rounded-full hover:bg-cyberpink/10 transition-all duration-300">
+                        Explore Dojo
+                    </a>
+                </div>
+            </div>
+            
+            <div class="absolute bottom-10 left-0 right-0 flex justify-center z-20 animate-bounce">
+                <i data-feather="chevron-down" class="text-cyberblue w-10 h-10"></i>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="py-20 px-4 max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-cybergreen to-cyberblue">
+                The Neon Path to Mastery
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-cybergray/50 backdrop-blur-sm p-8 rounded-xl border border-cyberblue/20 hover:border-cyberblue/50 transition-all duration-300 group">
+                    <div class="w-16 h-16 mb-6 rounded-full bg-cyberblue/10 flex items-center justify-center group-hover:bg-cyberblue/20 transition-all duration-300">
+                        <i data-feather="book" class="text-cyberblue w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-cyberblue">Kanji Matrix</h3>
+                    <p class="text-gray-300 mb-4">
+                        Decode kanji like a hacker with our interactive stroke-order visualization and radical breakdowns.
+                    </p>
+                    <div class="h-1 w-16 bg-gradient-to-r from-cyberblue to-transparent mb-4"></div>
+                    <a href="#" class="text-cyberblue flex items-center group-hover:text-cyan-300 transition-colors duration-300">
+                        Enter the matrix <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-cybergray/50 backdrop-blur-sm p-8 rounded-xl border border-cyberpink/20 hover:border-cyberpink/50 transition-all duration-300 group">
+                    <div class="w-16 h-16 mb-6 rounded-full bg-cyberpink/10 flex items-center justify-center group-hover:bg-cyberpink/20 transition-all duration-300">
+                        <i data-feather="message-square" class="text-cyberpink w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-cyberpink">Neon Q&A</h3>
+                    <p class="text-gray-300 mb-4">
+                        Our cyber-senseis answer your burning questions in real-time with AI-enhanced explanations.
+                    </p>
+                    <div class="h-1 w-16 bg-gradient-to-r from-cyberpink to-transparent mb-4"></div>
+                    <a href="#" class="text-cyberpink flex items-center group-hover:text-pink-300 transition-colors duration-300">
+                        Ask anything <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-cybergray/50 backdrop-blur-sm p-8 rounded-xl border border-cybergreen/20 hover:border-cybergreen/50 transition-all duration-300 group">
+                    <div class="w-16 h-16 mb-6 rounded-full bg-cybergreen/10 flex items-center justify-center group-hover:bg-cybergreen/20 transition-all duration-300">
+                        <i data-feather="award" class="text-cybergreen w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-cybergreen">XP System</h3>
+                    <p class="text-gray-300 mb-4">
+                        Level up your Japanese like a RPG character with our gamified learning progression.
+                    </p>
+                    <div class="h-1 w-16 bg-gradient-to-r from-cybergreen to-transparent mb-4"></div>
+                    <a href="#" class="text-cybergreen flex items-center group-hover:text-green-300 transition-colors duration-300">
+                        Start grinding <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Community Preview -->
+        <section class="py-20 px-4 bg-cybergray/30">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-cyberpurple to-cyberpink">
+                    Pulse of the Neon Dojo
+                </h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-6 text-cyberblue">Real-time Questions Streaming</h3>
+                        <p class="text-gray-300 mb-6 text-lg">
+                            Watch as questions light up our network from learners across the globe. Each node represents a curious mind connecting to our knowledge hub.
+                        </p>
+                        <a href="/community" class="px-8 py-3 bg-cyberpurple text-white font-bold rounded-full hover:bg-purple-600 transition-all duration-300 inline-flex items-center">
+                            Join the network <i data-feather="activity" class="ml-2 w-5 h-5"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="relative h-96 bg-cyberdark/80 rounded-xl border border-cyberpurple/30 p-4">
+                        <!-- Animated data stream simulation -->
+                        <div class="absolute inset-0 overflow-hidden">
+                            <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-cyberpurple to-transparent animate-pulse"></div>
+                            
+                            <!-- Simulated questions streaming -->
+                            <div class="question-stream">
+                                <div class="question-item text-sm mb-3 p-3 bg-cyberdark rounded border-l-4 border-cyberblue animate-float-up">
+                                    <div class="flex items-center mb-1">
+                                        <div class="w-6 h-6 rounded-full bg-cyberblue/20 mr-2 flex items-center justify-center">
+                                            <i data-feather="user" class="w-3 h-3 text-cyberblue"></i>
+                                        </div>
+                                        <span class="text-cyberblue">CyberRonin42</span>
+                                    </div>
+                                    <p>What's the difference between は and が particles?</p>
+                                </div>
+                                
+                                <div class="question-item text-sm mb-3 p-3 bg-cyberdark rounded border-l-4 border-cyberpink animate-float-up delay-100">
+                                    <div class="flex items-center mb-1">
+                                        <div class="w-6 h-6 rounded-full bg-cyberpink/20 mr-2 flex items-center justify-center">
+                                            <i data-feather="user" class="w-3 h-3 text-cyberpink"></i>
+                                        </div>
+                                        <span class="text-cyberpink">NeonSamurai</span>
+                                    </div>
+                                    <p>Best way to memorize kanji readings?</p>
+                                </div>
+                                
+                                <div class="question-item text-sm mb-3 p-3 bg-cyberdark rounded border-l-4 border-cybergreen animate-float-up delay-200">
+                                    <div class="flex items-center mb-1">
+                                        <div class="w-6 h-6 rounded-full bg-cybergreen/20 mr-2 flex items-center justify-center">
+                                            <i data-feather="user" class="w-3 h-3 text-cybergreen"></i>
+                                        </div>
+                                        <span class="text-cybergreen">DataNinja</span>
+                                    </div>
+                                    <p>Looking for cyberpunk anime recommendations to improve listening...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <!-- Floating action button -->
+    <div class="fixed bottom-8 right-8 z-50">
+        <a href="/ask" class="w-16 h-16 rounded-full bg-gradient-to-br from-cyberblue to-cyberpink flex items-center justify-center shadow-lg shadow-cyberblue/30 hover:shadow-cyberpink/30 transition-all duration-300 group">
+            <i data-feather="plus" class="text-white w-8 h-8 group-hover:rotate-90 transition-transform duration-300"></i>
+        </a>
+    </div>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
